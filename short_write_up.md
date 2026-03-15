@@ -1,7 +1,10 @@
 *Short Write-Up*
 
 My goal was to build a simple bid engine that decides which sections to bid on, what price to bid, and how much capital to allocate while trying to maximize risk-adjusted profit.
+
 First, the script normalizes section names so listings, sales data, primary availability, and bids can be matched correctly even if they use slightly different names. Then it classifies each event as strong, neutral, or weak using signals like daily sales volume, days to event, primary ticket availability, and whether competitors are already bidding.
+
+Also, I intentionally restricted position size and market capacity so the engine doesn't buy more tickets than the market can absorb. That reduces liquidity risk and prevents inventory buildup before the event.
 
 For each section, I estimate a realistic resale price using a weighted combination of:
 1. section ATP (average transaction price)
