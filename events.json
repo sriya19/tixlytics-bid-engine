@@ -1,0 +1,152 @@
+{
+  "_schema": {
+    "secondary_listings": "Current asking prices on secondary exchanges. Section naming may vary across sources. Price is per-ticket in USD — this is what sellers are asking, not what tickets actually sell for.",
+    "primary_availability": "How much inventory remains unsold at face value on the primary marketplace. pct_available is a percentage from 0.00 (sold out) to 100.00 (fully available). Face value is the original price set by the event organizer / team / venue.",
+    "sales_data": "Realized transaction data from a third-party market intelligence platform. ATP = average transaction price (what tickets have actually sold for recently, not what they're listed at). daily_volume = average number of tickets sold per day. total_market_qty = total listed inventory for this event on the largest secondary exchange. At the section level, total_qty is total listed inventory for that section.",
+    "current_highest_bids": "The leading competitive bid on the acquisition platform for each section. bid_price is per-ticket. split_qty is the ticket grouping the bidder is willing to acquire (e.g., 2 = bidding on pairs, 4 = bidding on 4-packs)."
+  },
+  "events": [
+    {
+      "event_id": "EVT-001",
+      "name": "Billie Eilish - Hit Me Hard and Soft Tour",
+      "category": "concert",
+      "venue": "Madison Square Garden",
+      "date": "2026-07-10T20:00:00-04:00",
+      "days_to_event": 30,
+      "secondary_listings": [
+        {"id": "SH-1001", "source": "stubhub", "section": "Floor A", "row": "2", "quantity": 2, "price": 440.00, "timestamp": "2026-06-08T10:00:00Z"},
+        {"id": "VS-2001", "source": "vividseats", "section": "FLOOR-A", "row": "2", "quantity": 2, "price": 445.00, "timestamp": "2026-06-08T10:20:00Z"},
+        {"id": "SH-1002", "source": "stubhub", "section": "Floor A", "row": "9", "quantity": 4, "price": 290.00, "timestamp": "2026-06-08T09:30:00Z"},
+        {"id": "TN-3001", "source": "ticketnetwork", "section": "Fl A", "row": "9", "quantity": 4, "price": 295.00, "timestamp": "2026-06-08T09:45:00Z"},
+        {"id": "SH-1003", "source": "stubhub", "section": "SEC 101", "row": "B", "quantity": 2, "price": 190.00, "timestamp": "2026-06-08T11:00:00Z"},
+        {"id": "VS-2002", "source": "vividseats", "section": "Section 101", "row": "B", "quantity": 2, "price": 195.00, "timestamp": "2026-06-08T11:10:00Z"},
+        {"id": "SH-1004", "source": "stubhub", "section": "SEC 101", "row": "G", "quantity": 3, "price": 150.00, "timestamp": "2026-06-08T08:00:00Z"},
+        {"id": "SH-1005", "source": "stubhub", "section": "SEC 101", "row": "N", "quantity": 2, "price": 118.00, "timestamp": "2026-06-08T08:30:00Z"},
+        {"id": "VS-2003", "source": "vividseats", "section": "Section 101", "row": "N", "quantity": 2, "price": 120.00, "timestamp": "2026-06-08T08:45:00Z"},
+        {"id": "SH-1006", "source": "stubhub", "section": "SEC 209", "row": "3", "quantity": 2, "price": 86.00, "timestamp": "2026-06-08T12:00:00Z"},
+        {"id": "VS-2004", "source": "vividseats", "section": "Section 209", "row": "3", "quantity": 2, "price": 88.00, "timestamp": "2026-06-08T12:15:00Z"},
+        {"id": "SH-1007", "source": "stubhub", "section": "SEC 209", "row": "12", "quantity": 4, "price": 62.00, "timestamp": "2026-06-08T12:10:00Z"},
+        {"id": "TN-3002", "source": "ticketnetwork", "section": "Sec 209", "row": "12", "quantity": 4, "price": 64.00, "timestamp": "2026-06-08T12:20:00Z"},
+        {"id": "SH-1008", "source": "stubhub", "section": "SEC 220", "row": "1", "quantity": 2, "price": 55.00, "timestamp": "2026-06-08T13:00:00Z"},
+        {"id": "VS-2005", "source": "vividseats", "section": "Section 220", "row": "1", "quantity": 2, "price": 57.00, "timestamp": "2026-06-08T13:05:00Z"},
+        {"id": "SH-1009", "source": "stubhub", "section": "SEC 220", "row": "8", "quantity": 3, "price": 42.00, "timestamp": "2026-06-08T13:15:00Z"}
+      ],
+      "primary_availability": [
+        {"section": "Floor A", "face_value": 250.00, "pct_available": 0.00},
+        {"section": "Section 101", "face_value": 125.00, "pct_available": 0.00},
+        {"section": "Section 209", "face_value": 55.00, "pct_available": 0.00},
+        {"section": "Section 220", "face_value": 50.00, "pct_available": 0.00}
+      ],
+      "sales_data": {
+        "event_level": {
+          "atp": 165.00,
+          "daily_volume": 42,
+          "total_market_qty": 805
+        },
+        "section_level": [
+          {"section": "Floor A", "atp": 350.00, "daily_volume": 8, "total_qty": 75},
+          {"section": "Section 101", "atp": 155.00, "daily_volume": 10, "total_qty": 220},
+          {"section": "Section 209", "atp": 78.00, "daily_volume": 2, "total_qty": 210},
+          {"section": "Section 220", "atp": 46.00, "daily_volume": 3, "total_qty": 170}
+        ]
+      },
+      "current_highest_bids": [
+        {"section": "Floor A", "bid_price": 220.00, "split_qty": 2},
+        {"section": "Section 101", "bid_price": 95.00, "split_qty": 2},
+        {"section": "Section 209", "bid_price": 45.00, "split_qty": 2},
+        {"section": "Section 220", "bid_price": 35.00, "split_qty": 2}
+      ]
+    },
+    {
+      "event_id": "EVT-002",
+      "name": "Hamilton",
+      "category": "theater",
+      "venue": "Richard Rodgers Theatre",
+      "date": "2026-06-24T19:30:00-04:00",
+      "days_to_event": 14,
+      "secondary_listings": [
+        {"id": "SH-1020", "source": "stubhub", "section": "Orchestra C", "row": "F", "quantity": 2, "price": 365.00, "timestamp": "2026-06-08T10:00:00Z"},
+        {"id": "VS-2020", "source": "vividseats", "section": "ORCH C", "row": "F", "quantity": 2, "price": 370.00, "timestamp": "2026-06-08T10:15:00Z"},
+        {"id": "SH-1021", "source": "stubhub", "section": "Orchestra C", "row": "N", "quantity": 2, "price": 280.00, "timestamp": "2026-06-08T11:00:00Z"},
+        {"id": "SH-1022", "source": "stubhub", "section": "Orchestra L", "row": "D", "quantity": 2, "price": 295.00, "timestamp": "2026-06-08T11:30:00Z"},
+        {"id": "VS-2021", "source": "vividseats", "section": "Orch L", "row": "D", "quantity": 2, "price": 300.00, "timestamp": "2026-06-08T11:45:00Z"},
+        {"id": "SH-1023", "source": "stubhub", "section": "Orchestra L", "row": "R", "quantity": 3, "price": 215.00, "timestamp": "2026-06-08T08:30:00Z"},
+        {"id": "SH-1024", "source": "stubhub", "section": "Front Mezz", "row": "A", "quantity": 2, "price": 250.00, "timestamp": "2026-06-08T12:00:00Z"},
+        {"id": "VS-2022", "source": "vividseats", "section": "Front Mezzanine", "row": "A", "quantity": 2, "price": 255.00, "timestamp": "2026-06-08T12:10:00Z"},
+        {"id": "SH-1025", "source": "stubhub", "section": "Front Mezz", "row": "E", "quantity": 2, "price": 185.00, "timestamp": "2026-06-08T12:20:00Z"},
+        {"id": "SH-1026", "source": "stubhub", "section": "Rear Mezz", "row": "B", "quantity": 2, "price": 135.00, "timestamp": "2026-06-08T13:00:00Z"},
+        {"id": "VS-2023", "source": "vividseats", "section": "Rear Mezzanine", "row": "B", "quantity": 2, "price": 138.00, "timestamp": "2026-06-08T13:05:00Z"},
+        {"id": "SH-1027", "source": "stubhub", "section": "Rear Mezz", "row": "G", "quantity": 4, "price": 98.00, "timestamp": "2026-06-08T13:15:00Z"}
+      ],
+      "primary_availability": [
+        {"section": "Orchestra C", "face_value": 277.00, "pct_available": 0.00},
+        {"section": "Orchestra L", "face_value": 277.00, "pct_available": 60.00},
+        {"section": "Front Mezzanine", "face_value": 197.00, "pct_available": 15.00},
+        {"section": "Rear Mezzanine", "face_value": 127.00, "pct_available": 52.00}
+      ],
+      "sales_data": {
+        "event_level": {
+          "atp": 210.00,
+          "daily_volume": 5,
+          "total_market_qty": 105
+        },
+        "section_level": [
+          {"section": "Orchestra C", "atp": 310.00, "daily_volume": 1, "total_qty": 22},
+          {"section": "Orchestra L", "atp": 270.00, "daily_volume": 1, "total_qty": 25},
+          {"section": "Front Mezzanine", "atp": 205.00, "daily_volume": 2, "total_qty": 28},
+          {"section": "Rear Mezzanine", "atp": 105.00, "daily_volume": 1, "total_qty": 18}
+        ]
+      },
+      "current_highest_bids": []
+    },
+    {
+      "event_id": "EVT-004",
+      "name": "NBA Eastern Conference Finals - Game 5 - Knicks vs Celtics",
+      "category": "sports",
+      "venue": "Madison Square Garden",
+      "date": "2026-06-15T19:00:00-04:00",
+      "days_to_event": 5,
+      "secondary_listings": [
+        {"id": "SH-1060", "source": "stubhub", "section": "Floor", "row": "AA", "quantity": 2, "price": 2800.00, "timestamp": "2026-06-08T10:00:00Z"},
+        {"id": "VS-2060", "source": "vividseats", "section": "FLOOR", "row": "AA", "quantity": 2, "price": 2850.00, "timestamp": "2026-06-08T10:10:00Z"},
+        {"id": "SH-1061", "source": "stubhub", "section": "SEC 3", "row": "1", "quantity": 2, "price": 1250.00, "timestamp": "2026-06-08T11:00:00Z"},
+        {"id": "VS-2061", "source": "vividseats", "section": "Section 3", "row": "1", "quantity": 2, "price": 1275.00, "timestamp": "2026-06-08T11:10:00Z"},
+        {"id": "SH-1062", "source": "stubhub", "section": "SEC 3", "row": "10", "quantity": 4, "price": 885.00, "timestamp": "2026-06-08T11:30:00Z"},
+        {"id": "TN-3060", "source": "ticketnetwork", "section": "Sec 3", "row": "10", "quantity": 4, "price": 895.00, "timestamp": "2026-06-08T11:45:00Z"},
+        {"id": "SH-1063", "source": "stubhub", "section": "SEC 3", "row": "18", "quantity": 2, "price": 650.00, "timestamp": "2026-06-08T08:30:00Z"},
+        {"id": "SH-1064", "source": "stubhub", "section": "SEC 210", "row": "2", "quantity": 2, "price": 425.00, "timestamp": "2026-06-08T12:00:00Z"},
+        {"id": "VS-2062", "source": "vividseats", "section": "Section 210", "row": "2", "quantity": 2, "price": 430.00, "timestamp": "2026-06-08T12:15:00Z"},
+        {"id": "SH-1065", "source": "stubhub", "section": "SEC 210", "row": "10", "quantity": 3, "price": 340.00, "timestamp": "2026-06-08T12:20:00Z"},
+        {"id": "SH-1066", "source": "stubhub", "section": "SEC 210", "row": "18", "quantity": 2, "price": 275.00, "timestamp": "2026-06-08T12:30:00Z"},
+        {"id": "SH-1067", "source": "stubhub", "section": "SEC 415", "row": "1", "quantity": 2, "price": 195.00, "timestamp": "2026-06-08T13:00:00Z"},
+        {"id": "VS-2063", "source": "vividseats", "section": "Section 415", "row": "5", "quantity": 4, "price": 155.00, "timestamp": "2026-06-08T13:10:00Z"},
+        {"id": "SH-1068", "source": "stubhub", "section": "SEC 415", "row": "12", "quantity": 2, "price": 125.00, "timestamp": "2026-06-08T13:15:00Z"}
+      ],
+      "primary_availability": [
+        {"section": "Floor", "face_value": 1500.00, "pct_available": 0.00},
+        {"section": "Section 3", "face_value": 550.00, "pct_available": 0.00},
+        {"section": "Section 210", "face_value": 225.00, "pct_available": 0.00},
+        {"section": "Section 415", "face_value": 95.00, "pct_available": 0.00}
+      ],
+      "sales_data": {
+        "event_level": {
+          "atp": 620.00,
+          "daily_volume": 155,
+          "total_market_qty": 870
+        },
+        "section_level": [
+          {"section": "Floor", "atp": 2650.00, "daily_volume": 4, "total_qty": 18},
+          {"section": "Section 3", "atp": 875.00, "daily_volume": 6, "total_qty": 145},
+          {"section": "Section 210", "atp": 355.00, "daily_volume": 48, "total_qty": 290},
+          {"section": "Section 415", "atp": 165.00, "daily_volume": 45, "total_qty": 400}
+        ]
+      },
+      "current_highest_bids": [
+        {"section": "Floor", "bid_price": 2500.00, "split_qty": 2},
+        {"section": "Section 3", "bid_price": 520.00, "split_qty": 2},
+        {"section": "Section 210", "bid_price": 195.00, "split_qty": 2},
+        {"section": "Section 415", "bid_price": 82.00, "split_qty": 4}
+      ]
+    }
+  ]
+}
